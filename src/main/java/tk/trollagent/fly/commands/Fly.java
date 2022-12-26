@@ -16,16 +16,16 @@ public class Fly implements CommandExecutor {
 
             if (args.length == 1) {
                 if (player.hasPermission("simplefly.fly.other")) {
-                    Player player1 = Bukkit.getPlayer(args[0]);
+                    Player target = Bukkit.getPlayer(args[0]);
                     if (player.getServer().getPlayer(args[0]) != null) {
-                        if (player1.getAllowFlight() == true) {
-                            player1.setAllowFlight(false);
-                            player1.sendMessage(ChatColor.RED + "Flight mode activated!");
-                            sender.sendMessage(ChatColor.RED + "Flight mode deactivated for " + player1.getDisplayName() + "!");
+                        if (target.getAllowFlight() == true) {
+                            target.setAllowFlight(false);
+                            target.sendMessage(ChatColor.RED + "Flight mode activated!");
+                            sender.sendMessage(ChatColor.RED + "Flight mode deactivated for " + target.getDisplayName() + "!");
                         } else {
-                            player1.setAllowFlight(true);
-                            player1.sendMessage(ChatColor.GREEN + "Flight mode activated!");
-                            sender.sendMessage(ChatColor.GREEN + "Flight mode activated for " + player1.getDisplayName() + "!");
+                            target.setAllowFlight(true);
+                            target.sendMessage(ChatColor.GREEN + "Flight mode activated!");
+                            sender.sendMessage(ChatColor.GREEN + "Flight mode activated for " + target.getDisplayName() + "!");
                         }
                         return false;
                     } else {
@@ -51,16 +51,16 @@ public class Fly implements CommandExecutor {
             return false;
         }else {
             if (args.length == 1) {
-                    Player player1 = Bukkit.getPlayer(args[0]);
+                    Player target = Bukkit.getPlayer(args[0]);
                     if (sender.getServer().getPlayer(args[0]) != null) {
-                        if (player1.getAllowFlight() == true) {
-                            player1.setAllowFlight(false);
-                            player1.sendMessage(ChatColor.RED + "Flight mode deactivated!");
-                            sender.sendMessage(ChatColor.RED + "Flight mode deactivated for " + player1.getDisplayName() + "!");
+                        if (target.getAllowFlight() == true) {
+                            target.setAllowFlight(false);
+                            target.sendMessage(ChatColor.RED + "Flight mode deactivated!");
+                            sender.sendMessage(ChatColor.RED + "Flight mode deactivated for " + target.getDisplayName() + "!");
                         } else {
-                            player1.setAllowFlight(true);
-                            player1.sendMessage(ChatColor.GREEN + "Flight mode activated!");
-                            sender.sendMessage(ChatColor.GREEN + "Flight mode activated for " + player1.getDisplayName() + "!");
+                            target.setAllowFlight(true);
+                            target.sendMessage(ChatColor.GREEN + "Flight mode activated!");
+                            sender.sendMessage(ChatColor.GREEN + "Flight mode activated for " + target.getDisplayName() + "!");
                         }
                         return false;
                     } else {
