@@ -1,0 +1,36 @@
+specVersion: 1
+type: plugin
+name:
+  de: SimpleFly
+authors:
+  - Trollagent
+download:
+  url: hhttps://github.com/Tr0llagent/SimpleFly/releases/download/Release/fly-1.0.0.jar
+  name: MyDownload
+supportedPlatforms:
+  - spigot
+  - paper
+supportedGameVersions: ^1.12.2
+category: misc adminTool paper
+introduction:
+  de: Ein simples /fly Plugin
+description:
+  de: |
+      # Überblick
+      Es gibt einen Befehl namen /fly mit diesen kann man sich oder andere fliegen lassen
+
+      # Permissons
+      - simplefly.fly.other (um andere Fliegen zu lassen)
+      - simplefly.fly.self (um sich selbst Fliegen zu lassen)
+installation:
+  de: |
+    - Herunterladen der Plugin-Datei
+    - Ablegen der Datei im Plugins-Ordner
+    - Server neustarten
+  en: |
+    - Download the plugin-file
+    - Put the file into your plugins-folder
+    - Restart your server
+tags:
+  - fly
+icon: https://github.com/Tr0llagent/SimpleFly/blob/main/logo.png
