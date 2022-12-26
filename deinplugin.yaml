@@ -5,13 +5,13 @@ name:
 authors:
   - Trollagent
 download:
-  url: hhttps://github.com/Tr0llagent/SimpleFly/releases/download/Release/fly-1.0.0.jar
-  name: MyDownload
+  url: https://github.com/Tr0llagent/SimpleFly/releases
+  name: Download
 supportedPlatforms:
   - spigot
   - paper
 supportedGameVersions: ^1.12.2
-category: misc adminTool paper
+category: misc
 introduction:
   de: Ein simples /fly Plugin
 description:
@@ -33,4 +33,4 @@ installation:
     - Restart your server
 tags:
   - fly
-icon: https://github.com/Tr0llagent/SimpleFly/blob/main/logo.png
+icon: https://raw.githubusercontent.com/Tr0llagent/SimpleFly/main/logo.png
