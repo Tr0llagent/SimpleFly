@@ -26,13 +26,13 @@ public class FlyCommand implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        //if (!player.hasPermission(simpleFly.getConfig().getString("fly-other-permission")) || !player.hasPermission(simpleFly.getConfig().getString("fly-other-permission"))) {
-        //    player.sendMessage(ChatColor.translateAlternateColorCodes('&',
-        //            simpleFly.getConfig().getString("noperms-message")
-        //                    .replace("%player%", player.getDisplayName())
-        //                    .replace("%target%", args[0])));
-        //    return true;
-        //}
+        if (!player.hasPermission(simpleFly.getConfig().getString("fly-other-permission")) || !player.hasPermission(simpleFly.getConfig().getString("fly-other-permission"))) {
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&',
+                    simpleFly.getConfig().getString("noperms-message")
+                            .replace("%player%", player.getDisplayName())
+                            .replace("%target%", args[0])));
+            return true;
+        }
 
         if (args.length > 1) {
             player.sendMessage(ChatColor.translateAlternateColorCodes('&',
