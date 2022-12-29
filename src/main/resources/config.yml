@@ -1,0 +1,29 @@
+######################################################
+#                                                    #
+#                      SimpleFly                     #
+#                     by Trollagent                  #
+#               https://github.com/Tr0llagent        #
+#                                                    #
+#######################################################
+
+# You can use '&' for colors
+# and you can use placeholders:
+## %player% for the player executing the command
+## %target% for the player that you want to let fly
+
+###################### Messages #######################
+usage-message: "&c/fly [player]" #no placeholders
+non-player-message: "&cYou are not a player" #no placeholders
+invalidplayer-message: "&c%target% is an invalid Player" #%player%, %target%
+fly-enabled-by-others-message: "&aFly enabled by %player%" #%player%, %target%
+fly-disabled-by-others-message: "&cFly disabled by %player%" #%player%, %target%
+fly-enabled-for-others-message: "&aFly enabled for %target%" #%player%, %target%
+fly-disabled-for-others-message: "&cFly disabled for %target%" #%player%, %target%
+fly-enabled-self-message: "&aFly enabled for you" #%player%
+fly-disabled-self-message: "&cFly disabled for you" #%player%
+noperms-message: "&cHey %player%, you dont have the permission to do this" #%player%
+
+##################### Permissions #####################
+fly-self-permission: "simplefly.fly.self"
+fly-other-permission: "simplefly.fly.other"
+

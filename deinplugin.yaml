@@ -1,7 +1,6 @@
 specVersion: 1
 type: plugin
-name:
-  de: SimpleFly
+name: SimpleFly
 authors:
   - Tr0llagent
 download:
@@ -14,14 +13,13 @@ supportedGameVersions: ^1.12.2
 category: misc
 introduction:
   de: Ein simples /fly Plugin
+  en: A simple /fly Plugin
 description:
   de: |
       # Überblick
       Es gibt einen Befehl namen /fly mit diesen kann man sich oder andere fliegen lassen
 
-      # Permissons
-      - simplefly.fly.other (um andere Fliegen zu lassen)
-      - simplefly.fly.self (um sich selbst Fliegen zu lassen)
+      # Config bitte einstellen
 installation:
   de: |
     - Herunterladen der Plugin-Datei

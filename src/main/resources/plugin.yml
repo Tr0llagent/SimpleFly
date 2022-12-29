@@ -1,6 +1,6 @@
 name: SimpleFly
 version: '${project.version}'
-main: tk.trollagent.fly.SimpleFly
+main: de.trollagent.simplefly.SimpleFly
 authors: [ Trollagent ]
 commands:
   fly:
